@@ -1,5 +1,6 @@
-import { Sequelize } from "sequelize-typescript";
-import { User } from "./models/User"; // Reference to your model
+import { Sequelize } from 'sequelize-typescript';
+import { Supplier } from './models/Supplier';
+import { Product } from './models/Product';
 
 const sequelize = new Sequelize({
   dialect: 'mysql',
@@ -7,7 +8,7 @@ const sequelize = new Sequelize({
   username: 'root',
   password: 'root',
   database: 'orm',
-  models: [User],  // Add all models here
+  models: [Supplier, Product],  // Register both models
 });
 
 export default sequelize;
