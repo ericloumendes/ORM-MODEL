@@ -1,4 +1,5 @@
 # Object-Relational Mapping sample with node.js sequelize
+## Documentation written by Eric Lourenço.
 
 ---
 
